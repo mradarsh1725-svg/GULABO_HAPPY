@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Gulaboo ❤️ — Mere Dil Ki Dhadkan</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cinzel Decorative, Playfair Display, Caveat, Dancing Script, Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cinzel+Decorative:wght@700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimsonCenter: '#3d0614',
+                        crimsonEdge: '#120106',
+                        champagneGold: '#ffd97d',
+                        roseGold: '#f2b5be',
+                        velvetCard: '#29040e'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        /* =========================================================
+           TYPOGRAPHY & ROYAL VELVET BACKGROUND
+        ========================================================= */
+        .font-royal { font-family: 'Cinzel Decorative', 'Playfair Display', serif; }
+        .font-serif-royal { font-family: 'Playfair Display', serif; }
+        .font-hand { font-family: 'Caveat', 'Dancing Script', cursive; }
+        .font-script { font-family: 'Dancing Script', cursive; }
+        .font-ui { font-family: 'Poppins', sans-serif; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(ellipse at 50% 18%, #4d081a 0%, #3d0614 28%, #21020a 68%, #120106 100%);
+            color: #fff3f6;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Warm Golden Ambient Vignette Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            background:
+                radial-gradient(circle at 50% 12%, rgba(255, 209, 102, 0.14) 0%, transparent 45%),
+                radial-gradient(circle at 50% 82%, rgba(255, 168, 76, 0.12) 0%, transparent 42%),
+                radial-gradient(ellipse at center, transparent 58%, rgba(8, 0, 3, 0.72) 100%);
+        }
+
+        /* Metallic Gold Gradient Title */
+        .title-gold-metallic {
+            background: linear-gradient(180deg, #fff6cc 0%, #ffe08a 32%, #e6a944 65%, #fff2b2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 2px 10px rgba(255, 198, 92, 0.45)) drop-shadow(0 4px 18px rgba(0, 0, 0, 0.75));
+        }
+
+        /* Soft Rose-Gold Subtitle */
+        .subtitle-rose-gold {
+            background: linear-gradient(180deg, #ffe3e8 0%, #f4a8b8 55%, #d6768b 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 2px 8px rgba(255, 120, 150, 0.32)) drop-shadow(0 3px 12px rgba(0, 0, 0, 0.8));
+        }
+
+        /* Luxury Velvet Glass Panel */
+        .glass-velvet {
+            background: linear-gradient(145deg, rgba(66, 9, 25, 0.78), rgba(22, 2, 8, 0.88));
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 217, 125, 0.34);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 232, 180, 0.15);
+        }
+
+        /* =========================================================
+           STAGGERED 2x2 POLAROID COLLAGE POSTER FRAMES
+        ========================================================= */
+        .polaroid-card {
+            position: relative;
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .polaroid-card:hover {
+            z-index: 25;
+        }
+
+        /* Cream-White Vintage Polaroid Frame (Polaroids 1 & 4) */
+        .polaroid-cream {
+            background: linear-gradient(160deg, #fffdf8 0%, #f7efdf 60%, #ede0c8 100%);
+            padding: 10px 10px 38px 10px;
+            border-radius: 3px;
+            box-shadow:
+                0 18px 36px rgba(0, 0, 0, 0.65),
+                0 0 22px rgba(255, 214, 130, 0.16),
+                inset 0 0 10px rgba(180, 145, 95, 0.16);
+        }
+
+        /* Brushed Metallic Gold Polaroid Frame (Polaroids 2 & 3) */
+        .polaroid-gold {
+            background: linear-gradient(135deg, #c99a3e 0%, #f5d88a 26%, #b88428 52%, #f8e2a3 78%, #a67422 100%);
+            padding: 11px 11px 40px 11px;
+            border-radius: 3px;
+            box-shadow:
+                0 18px 38px rgba(0, 0, 0, 0.68),
+                0 0 26px rgba(255, 209, 102, 0.25),
+                inset 0 1px 2px rgba(255, 250, 220, 0.7),
+                inset 0 -2px 5px rgba(80, 48, 8, 0.45);
+        }
+
+        @media (min-width: 640px) {
+            .polaroid-cream { padding: 12px 12px 46px 12px; }
+            .polaroid-gold { padding: 13px 13px 48px 13px; }
+        }
+
+        /* Individual Staggered Tilts Matching Poster */
+        .tilt-1 { transform: rotate(-5deg); }
+        .tilt-1:hover { transform: rotate(-2deg) scale(1.03); }
+
+        .tilt-2 { transform: rotate(4deg); }
+        .tilt-2:hover { transform: rotate(1.5deg) scale(1.03); }
+
+        .tilt-3 { transform: rotate(-4deg); }
+        .tilt-3:hover { transform: rotate(-1.5deg) scale(1.03); }
+
+        .tilt-4 { transform: rotate(5deg); }
+        .tilt-4:hover { transform: rotate(2deg) scale(1.03); }
+
+        /* Polaroid Photo Window */
+        .polaroid-window {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1.05;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #380716 0%, #190209 100%);
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Translucent Vintage Masking Tape */
+        .masking-tape {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-3deg);
+            width: 78px;
+            height: 22px;
+            background: linear-gradient(90deg, rgba(235, 214, 168, 0.52), rgba(247, 232, 195, 0.72), rgba(232, 209, 160, 0.54));
+            border-left: 1px dashed rgba(255, 248, 230, 0.45);
+            border-right: 1px dashed rgba(255, 248, 230, 0.45);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            z-index: 18;
+            pointer-events: none;
+        }
+
+        .masking-tape.right-tilt {
+            transform: translateX(-50%) rotate(4deg);
+        }
+
+        /* Polaroid Handwritten Caption */
+        .polaroid-caption {
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            right: 6px;
+            text-align: center;
+            color: #1f0a0e;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            line-height: 1.1;
+            pointer-events: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Subtle Edit Corner Overlay Buttons */
+        .edit-controls {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            gap: 6px;
+            z-index: 20;
+        }
+
+        .edit-icon-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 999px;
+            background: rgba(24, 3, 10, 0.82);
+            border: 1px solid rgba(255, 217, 125, 0.75);
+            color: #ffe8a3;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+            transition: transform 0.2s ease, background 0.2s ease;
+            cursor: pointer;
+        }
+
+        .edit-icon-btn:hover {
+            transform: scale(1.12);
+            background: rgba(120, 14, 45, 0.95);
+        }
+
+        /* Hide edit elements when Preview / Done Mode is ON */
+        body.preview-mode .edit-only {
+            display: none !important;
+        }
+
+        /* =========================================================
+           INTERACTIVE 7-LETTER "G U L A B O O" BIRTHDAY CAKE
+        ========================================================= */
+        .cake-stage {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            user-select: none;
+        }
+
+        .letter-candles-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: -10px;
+            z-index: 15;
+            position: relative;
+        }
+
+        @media (min-width: 640px) {
+            .letter-candles-row { gap: 11px; }
+        }
+
+        .letter-candle {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 3D Rose-Gold / Pink Letter Candle */
+        .candle-letter-body {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: 2.15rem;
+            line-height: 0.95;
+            background: linear-gradient(180deg, #ffd6e2 0%, #ff85a8 35%, #d63a68 78%, #8f1438 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter:
+                drop-shadow(0 1px 0 #ffc2d4)
+                drop-shadow(0 3px 0 #7a1030)
+                drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65));
+            position: relative;
+            z-index: 5;
+            padding: 0 1px;
+        }
+
+        @media (min-width: 640px) {
+            .candle-letter-body { font-size: 2.85rem; }
+        }
+
+        /* Tiny Candle Stick & Wick Above Each Letter */
+        .letter-wick {
+            width: 2.5px;
+            height: 8px;
+            background: #2b140d;
+            border-radius: 2px;
+            margin-bottom: -2px;
+            position: relative;
+            z-index: 4;
+        }
+
+        /* Realistic Flickering Flame & Warm Golden Halo */
+        .candle-flame {
+            position: relative;
+            width: 14px;
+            height: 26px;
+            margin-bottom: -3px;
+            border-radius: 50% 50% 45% 45% / 68% 68% 32% 32%;
+            background: radial-gradient(circle at 50% 72%, #ffffff 0%, #fff6b3 32%, #ffb732 68%, rgba(255, 88, 36, 0.85) 100%);
+            box-shadow:
+                0 0 10px 3px rgba(255, 224, 125, 0.95),
+                0 0 24px 8px rgba(255, 145, 50, 0.6),
+                0 0 42px 14px rgba(255, 95, 120, 0.3);
+            transform-origin: bottom center;
+            animation: flameFlicker 0.17s ease-in-out infinite alternate;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            z-index: 6;
+        }
+
+        .letter-candle:nth-child(even) .candle-flame {
+            animation-duration: 0.21s;
+            animation-delay: 0.06s;
+        }
+
+        .candle-flame.extinguished {
+            opacity: 0;
+            transform: scale(0.15) translateY(8px);
+            animation: none;
+        }
+
+        @keyframes flameFlicker {
+            0% { transform: scale(0.95, 1.04) rotate(-2.2deg); }
+            50% { transform: scale(1.05, 0.96) rotate(1.8deg); }
+            100% { transform: scale(0.98, 1.06) rotate(-1deg); }
+        }
+
+        /* Rising Smoke Wisp When Blown Out */
+        .candle-smoke {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            margin-left: -5px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 240, 245, 0.8), rgba(255, 240, 245, 0));
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .candle-smoke.puff {
+            animation: smokeDrift 1.6s ease-out forwards;
+        }
+
+        @keyframes smokeDrift {
+            0% { opacity: 0.9; transform: translate(0, 0) scale(0.6); }
+            45% { opacity: 0.5; transform: translate(7px, -24px) scale(1.7); }
+            100% { opacity: 0; transform: translate(-6px, -58px) scale(2.9); }
+        }
+
+        /* Richly Frosted Cream & Golden Sparkle Cake Base */
+        .frosted-cake-base {
+            position: relative;
+            width: 92%;
+            max-width: 390px;
+            height: 112px;
+            border-radius: 26px 26px 18px 18px;
+            background:
+                radial-gradient(circle at 22% 28%, rgba(255, 232, 165, 0.45) 0 2px, transparent 3px),
+                radial-gradient(circle at 75% 38%, rgba(255, 240, 190, 0.55) 0 1.8px, transparent 3px),
+                radial-gradient(circle at 46% 62%, rgba(255, 217, 125, 0.6) 0 2px, transparent 3px),
+                radial-gradient(circle at 86% 70%, rgba(255, 235, 175, 0.5) 0 1.5px, transparent 2.5px),
+                radial-gradient(circle at 14% 72%, rgba(255, 217, 125, 0.5) 0 1.8px, transparent 3px),
+                linear-gradient(180deg, #fff4e0 0%, #f3d4aa 24%, #cfa06d 60%, #8c5a32 100%);
+            box-shadow:
+                0 -8px 30px rgba(255, 190, 95, 0.28),
+                0 18px 40px rgba(0, 0, 0, 0.72),
+                inset 0 6px 14px rgba(255, 250, 235, 0.75),
+                inset 0 -14px 24px rgba(68, 32, 10, 0.55);
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        /* Cream Frosting Swirls Across Top Edge */
+        .frosted-icing-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 28px;
+            background: linear-gradient(180deg, #fffaf0 0%, #f8e2c2 100%);
+            border-radius: 26px 26px 14px 14px;
+            box-shadow: 0 4px 12px rgba(95, 48, 18, 0.32);
+        }
+
+        .frosted-icing-top::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -4px;
+            right: -4px;
+            height: 18px;
+            background:
+                radial-gradient(circle at 16px 0, #f8e2c2 13px, transparent 14px),
+                radial-gradient(circle at 48px 0, #fff6e6 15px, transparent 16px),
+                radial-gradient(circle at 82px 0, #f4d9b2 12px, transparent 13px),
+                radial-gradient(circle at 116px 0, #fff6e6 15px, transparent 16px),
+                radial-gradient(circle at 152px 0, #f8e2c2 13px, transparent 14px),
+                radial-gradient(circle at 188px 0, #fff6e6 16px, transparent 17px),
+                radial-gradient(circle at 224px 0, #f4d9b2 13px, transparent 14px),
+                radial-gradient(circle at 260px 0, #fff6e6 15px, transparent 16px),
+                radial-gradient(circle at 296px 0, #f8e2c2 13px, transparent 14px),
+                radial-gradient(circle at 332px 0, #fff6e6 15px, transparent 16px),
+                radial-gradient(circle at 368px 0, #f4d9b2 13px, transparent 14px);
+        }
+
+        /* Golden Sparkle Shimmer Band on Cake */
+        .cake-sparkle-band {
+            position: absolute;
+            inset: 28px 0 0 0;
+            background-image:
+                radial-gradient(circle, rgba(255, 240, 170, 0.85) 1px, transparent 1.6px),
+                radial-gradient(circle, rgba(255, 200, 100, 0.7) 1.3px, transparent 2px);
+            background-size: 26px 22px, 38px 30px;
+            background-position: 0 0, 13px 11px;
+            opacity: 0.65;
+            pointer-events: none;
+        }
+
+        /* Golden Cake Rim Platter */
+        .cake-platter {
+            width: 98%;
+            max-width: 425px;
+            height: 15px;
+            margin-top: -4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #8e6118 0%, #f5d88a 30%, #fff0b8 50%, #f5d88a 70%, #8e6118 100%);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75), 0 0 22px rgba(255, 209, 102, 0.25);
+            z-index: 6;
+        }
+
+        /* Glowing Dark-Maroon Pill Buttons with Gold Borders */
+        .btn-poster-pill {
+            background: linear-gradient(180deg, rgba(84, 12, 31, 0.94) 0%, rgba(36, 4, 14, 0.98) 100%);
+            border: 1.5px solid #ffd97d;
+            color: #fff6df;
+            box-shadow:
+                0 0 18px rgba(255, 209, 102, 0.35),
+                0 10px 25px rgba(0, 0, 0, 0.6),
+                inset 0 1px 4px rgba(255, 232, 168, 0.3);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .btn-poster-pill:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow:
+                0 0 28px rgba(255, 209, 102, 0.6),
+                0 12px 28px rgba(0, 0, 0, 0.65),
+                inset 0 1px 6px rgba(255, 238, 190, 0.45);
+        }
+
+        .btn-poster-pill:active {
+            transform: scale(0.97);
+        }
+
+        /* =========================================================
+           VINTAGE STATIONERY LOVE LETTER & RED WAX SEAL
+        ========================================================= */
+        .stationery-paper {
+            background: linear-gradient(160deg, #fffaf2 0%, #fcece3 55%, #f6dfd3 100%);
+            color: #3a0b1a;
+            box-shadow: 0 25px 55px rgba(0, 0, 0, 0.6), 0 0 32px rgba(255, 217, 125, 0.16);
+        }
+
+        .wax-seal {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 30%, #eb3b5a 0%, #a30b27 65%, #660416 100%);
+            box-shadow:
+                0 6px 16px rgba(60, 2, 14, 0.55),
+                inset 0 2px 5px rgba(255, 200, 212, 0.45),
+                inset 0 -3px 6px rgba(45, 0, 10, 0.65);
+            border: 2px dashed rgba(255, 217, 125, 0.5);
+        }
+
+        /* Floating Romantic Love Phrases */
+        @keyframes floatLoveUp {
+            0% { opacity: 0; transform: translate(-50%, 10px) scale(0.75); }
+            18% { opacity: 1; transform: translate(-50%, -18px) scale(1.06); }
+            100% { opacity: 0; transform: translate(-50%, -185px) scale(1.1); }
+        }
+        .floating-love-phrase {
+            position: fixed;
+            z-index: 80;
+            pointer-events: none;
+            animation: floatLoveUp 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            white-space: nowrap;
+        }
+
+        /* Toast Notification */
+        @keyframes toastIn {
+            from { opacity: 0; transform: translate(-50%, 16px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+        .toast-banner {
+            animation: toastIn 0.3s ease-out forwards;
+        }
+
+        /* Gentle Heart Pulse */
+        @keyframes softPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.12); }
+        }
+        .animate-soft-pulse {
+            animation: softPulse 2.4s ease-in-out infinite;
+        }
+
+        /* =========================================================
+           DREAMY ENTRANCE OVERLAY
+        ========================================================= */
+        #entrance-overlay {
+            background: radial-gradient(ellipse at 50% 35%, #4d081a 0%, #24030c 55%, #120106 100%);
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        #entrance-overlay.fade-out {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        @keyframes heartBeatGlow {
+            0%, 100% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 18px rgba(255, 71, 111, 0.75)) drop-shadow(0 0 40px rgba(255, 209, 102, 0.35));
+            }
+            18% {
+                transform: scale(1.18);
+                filter: drop-shadow(0 0 30px rgba(255, 71, 111, 0.95)) drop-shadow(0 0 55px rgba(255, 209, 102, 0.55));
+            }
+            34% {
+                transform: scale(1.03);
+            }
+            50% {
+                transform: scale(1.14);
+                filter: drop-shadow(0 0 28px rgba(255, 71, 111, 0.9)) drop-shadow(0 0 50px rgba(255, 209, 102, 0.5));
+            }
+        }
+
+        .heart-beat-glow {
+            animation: heartBeatGlow 1.9s ease-in-out infinite;
+        }
+
+        /* =========================================================
+           ROYAL CINEMA VIDEO MEMORY FRAME
+        ========================================================= */
+        .cinema-frame {
+            position: relative;
+            background: linear-gradient(145deg, rgba(64, 9, 24, 0.88), rgba(20, 2, 8, 0.94));
+            border: 2px solid rgba(255, 217, 125, 0.58);
+            box-shadow:
+                0 22px 50px rgba(0, 0, 0, 0.7),
+                0 0 35px rgba(255, 209, 102, 0.18),
+                inset 0 0 24px rgba(255, 209, 102, 0.08);
+        }
+
+        .cinema-corner {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-color: #ffd97d;
+            pointer-events: none;
+            z-index: 12;
+        }
+        .cinema-corner.tl { top: 10px; left: 10px; border-top-width: 2.5px; border-left-width: 2.5px; border-top-left-radius: 6px; }
+        .cinema-corner.tr { top: 10px; right: 10px; border-top-width: 2.5px; border-right-width: 2.5px; border-top-right-radius: 6px; }
+        .cinema-corner.bl { bottom: 10px; left: 10px; border-bottom-width: 2.5px; border-left-width: 2.5px; border-bottom-left-radius: 6px; }
+        .cinema-corner.br { bottom: 10px; right: 10px; border-bottom-width: 2.5px; border-right-width: 2.5px; border-bottom-right-radius: 6px; }
+
+        /* Hide empty video section completely in Clean Preview Mode */
+        body.preview-mode #video-section.no-video {
+            display: none !important;
+        }
+
+        /* =========================================================
+           INTERACTIVE 3D FLIP LOVE NOTE CARDS
+        ========================================================= */
+        .flip-card {
+            perspective: 1100px;
+            min-height: 215px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 215px;
+            transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+            transform-style: preserve-3d;
+        }
+
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-face {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(155deg, rgba(112, 15, 42, 0.94), rgba(34, 4, 14, 0.96));
+            border: 1.5px solid rgba(255, 217, 125, 0.65);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 209, 102, 0.16);
+        }
+    </style>
+</head>
+<body class="selection:bg-rose-500/40 selection:text-amber-100">
+
+    <!-- Full-Screen Animated Ambient & Celebration Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-[2]"></canvas>
+
+    <!-- =========================================================
+         DREAMY ENTRANCE OVERLAY
+    ========================================================= -->
+    <div id="entrance-overlay" class="fixed inset-0 z-[65] flex flex-col items-center justify-center p-6 text-center">
+        <div class="relative mb-6">
+            <div class="absolute inset-0 rounded-full bg-rose-500/25 blur-3xl scale-150 pointer-events-none"></div>
+            <div class="text-6xl sm:text-7xl heart-beat-glow select-none" aria-hidden="true">❤️</div>
+        </div>
+        <p class="text-xs uppercase tracking-[0.3em] text-amber-300/90 mb-2">A Special Birthday Surprise</p>
+        <h2 class="font-script text-4xl sm:text-6xl text-amber-100 drop-shadow-[0_3px_18px_rgba(255,190,100,0.45)] mb-3">
+            Meri Pyaari Gulaboo ❤️
+        </h2>
+        <p class="text-sm sm:text-base text-rose-200/85 max-w-md mb-8">
+            Tumhare janamdin par mere dil ka ek chhota sa tohfa, sirf tumhare liye...
+        </p>
+        <button id="open-heart-btn" type="button"
+            class="px-8 py-4 rounded-full btn-poster-pill text-base sm:text-lg font-semibold tracking-wide cursor-pointer flex items-center gap-2.5">
+            <span>Open My Heart 💌</span>
+        </button>
+    </div>
+
+    <!-- =========================================================
+         DISCREET TOP-RIGHT SETUP & SHARE PILL BUTTON
+    ========================================================= -->
+    <button id="setup-menu-btn" type="button" aria-label="Open Photos and Video Menu"
+        class="fixed top-4 right-4 z-40 px-3.5 py-2 rounded-full glass-velvet text-xs sm:text-sm font-medium text-amber-100 border border-amber-300/50 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-1.5 cursor-pointer shadow-xl">
+        <span>📸</span>
+        <span>Photos &amp; Video</span>
+    </button>
+
+    <!-- =========================================================
+         SLIDE-OVER GLASSMORPHIC SETUP & SHARE DRAWER
+    ========================================================= -->
+    <div id="setup-drawer-backdrop" class="hidden fixed inset-0 z-50 bg-black/65 backdrop-blur-sm transition-opacity">
+        <aside id="setup-drawer"
+            class="absolute top-0 right-0 h-full w-full max-w-xs sm:max-w-sm glass-velvet border-l border-amber-300/40 p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+            <div>
+                <div class="flex items-center justify-between border-b border-amber-200/20 pb-4 mb-5">
+                    <div>
+                        <h3 class="font-serif-royal text-lg font-bold text-amber-200">Photos, Video &amp; Share ✨</h3>
+                        <p class="text-[11px] text-rose-200/75 mt-0.5">Gulaboo ki photos, video &amp; song add karke save karein</p>
+                    </div>
+                    <button id="close-drawer-btn" type="button" aria-label="Close Menu"
+                        class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-amber-100 flex items-center justify-center cursor-pointer transition">
+                        ✕
+                    </button>
+                </div>
+
+                <div class="space-y-3.5">
+                    <!-- 1. Bulk Upload All 4 Photos -->
+                    <button id="bulk-upload-btn" type="button"
+                        class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-rose-700/90 to-amber-600/85 hover:from-rose-600 hover:to-amber-500 text-white text-sm font-medium border border-amber-200/50 shadow-lg flex items-center justify-center gap-2 cursor-pointer transition">
+                        <span>📤</span>
+                        <span>Upload All 4 Photos</span>
+                    </button>
+
+                    <!-- 2. Upload Special Video -->
+                    <button id="drawer-upload-video-btn" type="button"
+                        class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-fuchsia-900/80 to-rose-800/85 hover:from-fuchsia-800 hover:to-rose-700 text-amber-100 text-sm font-medium border border-amber-300/45 shadow-lg flex items-center justify-center gap-2 cursor-pointer transition">
+                        <span>🎬</span>
+                        <span>Upload Special Video</span>
+                    </button>
+                    <p id="video-status-text" class="text-[11px] text-center text-rose-200/70 -mt-1.5">
+                        No special video uploaded yet (MP4, WebM, MOV)
+                    </p>
+
+                    <!-- 3. Upload Custom MP3 Song -->
+                    <button id="upload-mp3-btn" type="button"
+                        class="w-full py-3 px-4 rounded-xl bg-white/10 hover:bg-white/15 text-amber-100 text-sm font-medium border border-amber-300/35 flex items-center justify-center gap-2 cursor-pointer transition">
+                        <span>🎵</span>
+                        <span id="mp3-btn-text">Upload Custom Song (MP3)</span>
+                    </button>
+                    <p id="mp3-status-text" class="text-[11px] text-center text-rose-200/70 -mt-1.5">
+                        Default: Built-in Romantic Piano Birthday Melody
+                    </p>
+
+                    <!-- 4. Toggle Preview / Done Mode -->
+                    <button id="toggle-preview-btn" type="button"
+                        class="w-full py-3 px-4 rounded-xl bg-emerald-900/55 hover:bg-emerald-800/65 text-emerald-100 text-sm font-medium border border-emerald-400/45 flex items-center justify-center gap-2 cursor-pointer transition">
+                        <span id="preview-toggle-icon">✅</span>
+                        <span id="preview-toggle-label">Done (Hide Edit Icons)</span>
+                    </button>
+
+                    <!-- 5. Download Final Self-Contained HTML -->
+                    <div class="pt-3 border-t border-amber-200/20">
+                        <button id="download-html-btn" type="button"
+                            class="w-full py-3.5 px-4 rounded-xl btn-poster-pill text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer">
+                            <span>💾</span>
+                            <span id="download-btn-label">Download Final Website (index.html)</span>
+                        </button>
+                        <p class="text-[11px] text-rose-200/75 leading-relaxed mt-2.5 text-center">
+                            Is file mein aapki saari uploaded photos, song aur video (25MB tak) andar hi save rahenge! Ise seedha <strong class="text-amber-200">app.netlify.com/drop</strong> par upload karke link Gulaboo ko bhej dein ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subtle Reset Option -->
+            <div class="pt-5 mt-6 border-t border-amber-200/15 text-center">
+                <button id="clear-photos-btn" type="button"
+                    class="text-xs text-rose-300/70 hover:text-rose-200 underline underline-offset-4 cursor-pointer transition">
+                    Reset Saved Photos, Video &amp; Song
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Hidden Native File Inputs -->
+    <input id="single-photo-input" type="file" accept="image/*" class="hidden" />
+    <input id="bulk-photo-input" type="file" accept="image/*" multiple class="hidden" />
+    <input id="custom-audio-input" type="file" accept="audio/*" class="hidden" />
+    <input id="video-file-input" type="file" accept="video/mp4,video/webm,video/quicktime,video/*" class="hidden" />
+
+    <!-- =========================================================
+         MAIN ROYAL BIRTHDAY EXPERIENCE
+    ========================================================= -->
+    <main class="relative z-10 pb-20">
+
+        <!-- =====================================================
+             SECTION 1: ROYAL POSTER HEADER & 2x2 POLAROID COLLAGE
+        ===================================================== -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-14 sm:pt-16 pb-10">
+            <!-- Hero Poster Title -->
+            <header class="text-center mb-8 sm:mb-10">
+                <h1 class="font-royal text-3xl sm:text-5xl md:text-6xl font-black tracking-wide leading-tight title-gold-metallic">
+                    HAPPY BIRTHDAY GULABOO <span class="inline-block animate-soft-pulse text-rose-500">❤️</span>
+                </h1>
+                <p class="font-serif-royal text-xl sm:text-3xl md:text-4xl font-bold tracking-[0.14em] uppercase mt-2 subtitle-rose-gold">
+                    MERE DIL KI DHADKAN
+                </p>
+            </header>
+
+            <!-- Staggered 2x2 Vintage Polaroid Collage -->
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Handwritten Romantic Note Accent (Top-Right) -->
+                <div class="text-right pr-2 sm:pr-6 mb-2 pointer-events-none">
+                    <p class="font-hand text-xl sm:text-2xl text-amber-200/90 leading-tight inline-block -rotate-2">
+                        Tere naal chaldi<br />har saans meri ✨
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 sm:gap-8 items-start">
+
+                    <!-- POLAROID 1: Top-Left (Cream-White, -5deg, Tape + Top-Left Paperclip) -->
+                    <article class="polaroid-card polaroid-cream tilt-1" data-slot="0" role="button" tabindex="0" aria-label="Polaroid 1: Pyaari Gulaboo">
+                        <!-- Masking Tape -->
+                        <div class="masking-tape" aria-hidden="true"></div>
+                        <!-- Metallic Paperclip Graphic (Top-Left Corner) -->
+                        <svg class="absolute -top-3 left-2.5 w-6 h-11 z-20 pointer-events-none drop-shadow-[0_3px_4px_rgba(0,0,0,0.55)]" viewBox="0 0 28 56" fill="none" aria-hidden="true">
+                            <path d="M9 18 V39 C9 44.5 13 48.5 17.5 48.5 C22 48.5 25 44.5 25 39 V12 C25 6.5 20.5 2.5 15 2.5 C9.5 2.5 5 6.5 5 12 V34 C5 37.5 7.5 40 10.5 40 C13.5 40 16 37.5 16 34 V15" stroke="url(#clipGrad1)" stroke-width="2.6" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="clipGrad1" x1="5" y1="2" x2="25" y2="49" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#fff4cc" />
+                                    <stop offset="45%" stop-color="#c99a3e" />
+                                    <stop offset="100%" stop-color="#7c5616" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="polaroid-window">
+                            <img id="polaroid-img-0" src="" alt="Pyaari Gulaboo" class="hidden w-full h-full object-cover" />
+                            <div id="polaroid-ph-0" class="w-full h-full flex flex-col items-center justify-center p-3 text-center border border-amber-300/25">
+                                <span class="text-2xl sm:text-3xl mb-1.5 opacity-90">📸</span>
+                                <span class="text-[11px] sm:text-xs font-medium text-amber-200/95 leading-snug edit-only">Tap to Add Photo</span>
+                                <span class="font-hand text-sm text-rose-200/75 mt-0.5">Photo 1</span>
+                            </div>
+                            <div id="polaroid-tools-0" class="hidden edit-controls edit-only">
+                                <button type="button" class="edit-icon-btn rotate-btn" data-slot="0" title="Rotate 90°" aria-label="Rotate Photo 1">↻</button>
+                                <button type="button" class="edit-icon-btn replace-btn" data-slot="0" title="Replace Photo" aria-label="Replace Photo 1">📷</button>
+                            </div>
+                        </div>
+
+                        <p class="polaroid-caption text-lg sm:text-2xl">Pyaari Gulaboo ✨</p>
+                    </article>
+
+                    <!-- POLAROID 2: Top-Right (Brushed Gold, +4deg) -->
+                    <article class="polaroid-card polaroid-gold tilt-2 mt-5 sm:mt-8" data-slot="1" role="button" tabindex="0" aria-label="Polaroid 2: Tum jiyo hazaron saal">
+                        <div class="polaroid-window">
+                            <img id="polaroid-img-1" src="" alt="Tum jiyo hazaron saal" class="hidden w-full h-full object-cover" />
+                            <div id="polaroid-ph-1" class="w-full h-full flex flex-col items-center justify-center p-3 text-center border border-amber-300/25">
+                                <span class="text-2xl sm:text-3xl mb-1.5 opacity-90">📸</span>
+                                <span class="text-[11px] sm:text-xs font-medium text-amber-200/95 leading-snug edit-only">Tap to Add Photo</span>
+                                <span class="font-hand text-sm text-rose-200/75 mt-0.5">Photo 2</span>
+                            </div>
+                            <div id="polaroid-tools-1" class="hidden edit-controls edit-only">
+                                <button type="button" class="edit-icon-btn rotate-btn" data-slot="1" title="Rotate 90°" aria-label="Rotate Photo 2">↻</button>
+                                <button type="button" class="edit-icon-btn replace-btn" data-slot="1" title="Replace Photo" aria-label="Replace Photo 2">📷</button>
+                            </div>
+                        </div>
+
+                        <p class="polaroid-caption text-lg sm:text-2xl">Tum jiyo hazaron saal</p>
+                    </article>
+
+                    <!-- POLAROID 3: Bottom-Left (Brushed Gold, -4deg) -->
+                    <article class="polaroid-card polaroid-gold tilt-3 -mt-2 sm:-mt-3" data-slot="2" role="button" tabindex="0" aria-label="Polaroid 3: Saree wali">
+                        <div class="polaroid-window">
+                            <img id="polaroid-img-2" src="" alt="Saree wali" class="hidden w-full h-full object-cover" />
+                            <div id="polaroid-ph-2" class="w-full h-full flex flex-col items-center justify-center p-3 text-center border border-amber-300/25">
+                                <span class="text-2xl sm:text-3xl mb-1.5 opacity-90">📸</span>
+                                <span class="text-[11px] sm:text-xs font-medium text-amber-200/95 leading-snug edit-only">Tap to Add Photo</span>
+                                <span class="font-hand text-sm text-rose-200/75 mt-0.5">Photo 3</span>
+                            </div>
+                            <div id="polaroid-tools-2" class="hidden edit-controls edit-only">
+                                <button type="button" class="edit-icon-btn rotate-btn" data-slot="2" title="Rotate 90°" aria-label="Rotate Photo 3">↻</button>
+                                <button type="button" class="edit-icon-btn replace-btn" data-slot="2" title="Replace Photo" aria-label="Replace Photo 3">📷</button>
+                            </div>
+                        </div>
+
+                        <p class="polaroid-caption text-lg sm:text-2xl">Saree wali</p>
+                    </article>
+
+                    <!-- POLAROID 4: Bottom-Right (Cream-White, +5deg, Tape + Top-Right Paperclip) -->
+                    <article class="polaroid-card polaroid-cream tilt-4 mt-3 sm:mt-4" data-slot="3" role="button" tabindex="0" aria-label="Polaroid 4: Birthday Cake">
+                        <!-- Masking Tape -->
+                        <div class="masking-tape right-tilt" aria-hidden="true"></div>
+                        <!-- Metallic Paperclip Graphic (Top-Right Corner) -->
+                        <svg class="absolute -top-3 right-2.5 w-6 h-11 z-20 pointer-events-none drop-shadow-[0_3px_4px_rgba(0,0,0,0.55)]" viewBox="0 0 28 56" fill="none" aria-hidden="true">
+                            <path d="M19 18 V39 C19 44.5 15 48.5 10.5 48.5 C6 48.5 3 44.5 3 39 V12 C3 6.5 7.5 2.5 13 2.5 C18.5 2.5 23 6.5 23 12 V34 C23 37.5 20.5 40 17.5 40 C14.5 40 12 37.5 12 34 V15" stroke="url(#clipGrad2)" stroke-width="2.6" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="clipGrad2" x1="3" y1="2" x2="23" y2="49" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#fff4cc" />
+                                    <stop offset="45%" stop-color="#c99a3e" />
+                                    <stop offset="100%" stop-color="#7c5616" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="polaroid-window">
+                            <img id="polaroid-img-3" src="" alt="Birthday Cake" class="hidden w-full h-full object-cover" />
+                            <div id="polaroid-ph-3" class="w-full h-full flex flex-col items-center justify-center p-3 text-center border border-amber-300/25">
+                                <span class="text-2xl sm:text-3xl mb-1.5 opacity-90">📸</span>
+                                <span class="text-[11px] sm:text-xs font-medium text-amber-200/95 leading-snug edit-only">Tap to Add Photo</span>
+                                <span class="font-hand text-sm text-rose-200/75 mt-0.5">Photo 4</span>
+                            </div>
+                            <div id="polaroid-tools-3" class="hidden edit-controls edit-only">
+                                <button type="button" class="edit-icon-btn rotate-btn" data-slot="3" title="Rotate 90°" aria-label="Rotate Photo 4">↻</button>
+                                <button type="button" class="edit-icon-btn replace-btn" data-slot="3" title="Replace Photo" aria-label="Replace Photo 4">📷</button>
+                            </div>
+                        </div>
+
+                        <p class="polaroid-caption text-lg sm:text-2xl">Birthday Cake</p>
+                    </article>
+
+                </div>
+
+                <!-- Handwritten Accent Below Polaroids -->
+                <div class="text-center mt-6 pointer-events-none">
+                    <p class="font-hand text-lg sm:text-xl text-rose-200/85">
+                        ♡ Chote chote love notes, sirf tumhare liye ♡
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SECTION 2: INTERACTIVE "G U L A B O O" CAKE & ACTION BUTTONS
+        ===================================================== -->
+        <section id="cake-section" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-14 text-center">
+
+            <!-- 7-Letter GULABOO Frosted Cake -->
+            <div class="cake-stage pt-6 pb-2">
+                <!-- Warm Golden Aura Behind Candles -->
+                <div id="cake-aura" class="absolute top-2 left-1/2 -translate-x-1/2 w-72 sm:w-96 h-32 rounded-full bg-amber-400/25 blur-3xl pointer-events-none transition-opacity duration-700"></div>
+
+                <!-- 7 Individual 3D Pink/Rose-Gold Letter Candles -->
+                <div class="letter-candles-row" aria-label="G U L A B O O Birthday Candles">
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">G</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">U</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">L</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">A</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">B</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">O</span>
+                    </div>
+                    <div class="letter-candle">
+                        <div class="candle-flame"></div>
+                        <div class="candle-smoke"></div>
+                        <div class="letter-wick"></div>
+                        <span class="candle-letter-body">O</span>
+                    </div>
+                </div>
+
+                <!-- Richly Frosted Cake Body -->
+                <div class="frosted-cake-base">
+                    <div class="frosted-icing-top"></div>
+                    <div class="cake-sparkle-band"></div>
+                </div>
+
+                <!-- Golden Rim Platter -->
+                <div class="cake-platter"></div>
+            </div>
+
+            <!-- Two Glowing Dark-Maroon Pill Buttons with Gold Borders -->
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-5">
+                <button id="candles-btn" type="button"
+                    class="w-full sm:w-auto px-7 py-3.5 rounded-full btn-poster-pill font-medium text-sm sm:text-base cursor-pointer">
+                    Candles Bujhao &amp; Wish Maango 🌬️✨
+                </button>
+
+                <button id="music-btn" type="button"
+                    class="w-full sm:w-auto px-7 py-3.5 rounded-full btn-poster-pill font-medium text-sm sm:text-base cursor-pointer min-w-[175px]">
+                    Music On 🎵
+                </button>
+            </div>
+
+            <!-- Romantic Hinglish Birthday Blessing Card (Reveals When Candles Blown Out) -->
+            <div id="blessing-card" class="hidden max-w-xl mx-auto mt-7 p-6 rounded-2xl glass-velvet border border-amber-300/60 shadow-[0_0_32px_rgba(255,209,102,0.28)]">
+                <p class="font-script text-3xl sm:text-4xl text-amber-200 mb-2">
+                    Ameen! Meri Jaan ✨❤️
+                </p>
+                <p class="text-sm sm:text-base text-rose-50/95 leading-relaxed">
+                    Happy Birthday Meri Pyaari Gulaboo! Bhagwan tumhari har khwahish poori kare ❤️
+                </p>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SECTION 2B: SPECIAL VIDEO MEMORY ("HAMARI KHAAS YAADEIN")
+        ===================================================== -->
+        <section id="video-section" class="no-video max-w-3xl mx-auto px-5 py-10">
+            <div class="text-center mb-7">
+                <span class="text-xs uppercase tracking-[0.26em] text-amber-300/90">Royal Cinema Memory</span>
+                <h2 class="font-serif-royal text-3xl sm:text-4xl font-bold text-amber-100 mt-2">
+                    Hamari Khaas Yaadein 🎬❤️
+                </h2>
+                <p class="font-hand text-xl sm:text-2xl text-rose-200/90 mt-1">
+                    Ek chhota sa video, sirf tumhare liye ✨
+                </p>
+            </div>
+
+            <!-- Luxurious Velvet & Gold Vintage Cinema Frame -->
+            <div class="cinema-frame rounded-3xl p-4 sm:p-6">
+                <!-- Decorative Golden Corner Flourishes -->
+                <span class="cinema-corner tl" aria-hidden="true"></span>
+                <span class="cinema-corner tr" aria-hidden="true"></span>
+                <span class="cinema-corner bl" aria-hidden="true"></span>
+                <span class="cinema-corner br" aria-hidden="true"></span>
+
+                <!-- Empty Tap-to-Upload State -->
+                <div id="video-upload-placeholder" role="button" tabindex="0" aria-label="Tap to Upload Special Video"
+                    class="w-full min-h-[240px] sm:min-h-[300px] rounded-2xl border-2 border-dashed border-amber-300/45 bg-black/30 hover:bg-black/45 hover:border-amber-300/80 transition-all duration-300 flex flex-col items-center justify-center p-6 text-center cursor-pointer group">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-rose-600/85 to-amber-500/85 flex items-center justify-center text-3xl shadow-[0_0_24px_rgba(255,209,102,0.4)] group-hover:scale-110 transition-transform duration-300 mb-4">
+                        🎬
+                    </div>
+                    <p class="font-serif-royal text-lg sm:text-xl font-semibold text-amber-100">
+                        🎬 Tap to Upload Special Video
+                    </p>
+                    <p class="text-xs sm:text-sm text-rose-200/75 mt-2 max-w-sm">
+                        Apna pasandida birthday video select karein (MP4, WebM, MOV supported)
+                    </p>
+                </div>
+
+                <!-- Active HTML5 Video Player State -->
+                <div id="video-player-container" class="hidden">
+                    <div class="relative rounded-2xl overflow-hidden bg-black border border-amber-300/40 shadow-2xl">
+                        <video id="special-video-player" controls playsinline preload="metadata"
+                            class="w-full max-h-[520px] rounded-2xl bg-black block mx-auto">
+                            Your browser does not support HTML5 video playback.
+                        </video>
+                    </div>
+
+                    <!-- Subtle Edit Controls (Automatically Hidden in Clean Preview Mode) -->
+                    <div class="edit-only mt-4 flex flex-wrap items-center justify-center gap-3">
+                        <button id="change-video-btn" type="button"
+                            class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-amber-100 text-xs sm:text-sm font-medium border border-amber-300/40 flex items-center gap-1.5 cursor-pointer transition">
+                            <span>🔄</span>
+                            <span>Change Video</span>
+                        </button>
+                        <button id="remove-video-btn" type="button"
+                            class="px-4 py-2 rounded-full bg-rose-950/80 hover:bg-rose-900/90 text-rose-200 text-xs sm:text-sm font-medium border border-rose-400/40 flex items-center gap-1.5 cursor-pointer transition">
+                            <span>🗑️</span>
+                            <span>Remove</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Royal Divider -->
+        <div class="flex items-center justify-center gap-3 text-amber-300/75 my-4 px-6">
+            <span class="w-16 sm:w-28 h-px bg-gradient-to-r from-transparent to-amber-300/65"></span>
+            <span class="text-lg">🌹</span>
+            <span class="w-16 sm:w-28 h-px bg-gradient-to-l from-transparent to-amber-300/65"></span>
+        </div>
+
+        <!-- =====================================================
+             SECTION 3A: DIL SE SHAYARI (4 ROMANTIC HINGLISH CARDS)
+        ===================================================== -->
+        <section class="max-w-5xl mx-auto px-5 py-12">
+            <div class="text-center mb-9">
+                <span class="text-xs uppercase tracking-[0.26em] text-amber-300/90">Straight From My Heart</span>
+                <h2 class="font-serif-royal text-3xl sm:text-4xl font-bold text-amber-100 mt-2">
+                    Dil Se Shayari 🌹
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Shayari 1 -->
+                <article class="glass-velvet rounded-2xl p-6 sm:p-7 hover:-translate-y-1 hover:border-amber-300/60 transition-all duration-300">
+                    <div class="text-2xl mb-3">🌙✨</div>
+                    <p class="font-serif-royal italic text-base sm:text-lg text-amber-100 leading-relaxed">
+                        "Chand bhi sharma jaaye teri ek muskaan ke aage,<br />
+                        Phool bhi murjha jaayein teri khoobsurti ke aage,<br />
+                        Khuda ne badi fursat se banaya hai tujhe meri Gulaboo,<br />
+                        Meri poori duniya feeki hai bas tere pyaar ke aage."
+                    </p>
+                </article>
+
+                <!-- Shayari 2 -->
+                <article class="glass-velvet rounded-2xl p-6 sm:p-7 hover:-translate-y-1 hover:border-amber-300/60 transition-all duration-300">
+                    <div class="text-2xl mb-3">🌹❤️</div>
+                    <p class="font-serif-royal italic text-base sm:text-lg text-amber-100 leading-relaxed">
+                        "Na jaane kya jaadu kiya hai tune mere dil par,<br />
+                        Har dhadkan mein bas tera hi naam aata hai,<br />
+                        Tere janamdin par maangu bas yahi dua rab se,<br />
+                        Tera har din khushiyon aur meri baahon mein shaam aata hai."
+                    </p>
+                </article>
+
+                <!-- Shayari 3 -->
+                <article class="glass-velvet rounded-2xl p-6 sm:p-7 hover:-translate-y-1 hover:border-amber-300/60 transition-all duration-300">
+                    <div class="text-2xl mb-3">💫💖</div>
+                    <p class="font-serif-royal italic text-base sm:text-lg text-amber-100 leading-relaxed">
+                        "Tujhse milne ke baad samajh aaya mohabbat kya hoti hai,<br />
+                        Teri hansi mein hi meri saari jannat basi hoti hai,<br />
+                        Chaahe kitne bhi saal guzar jaayein is zindagi ke,<br />
+                        Mere dil mein tere liye mohabbat har roz nayi hoti hai."
+                    </p>
+                </article>
+
+                <!-- Shayari 4 -->
+                <article class="glass-velvet rounded-2xl p-6 sm:p-7 hover:-translate-y-1 hover:border-amber-300/60 transition-all duration-300">
+                    <div class="text-2xl mb-3">🕯️🌸</div>
+                    <p class="font-serif-royal italic text-base sm:text-lg text-amber-100 leading-relaxed">
+                        "Meri subah ka ujala bhi tu, meri raat ka sukoon bhi tu,<br />
+                        Mere har khwaab ki manzil, mera har junoon bhi tu,<br />
+                        Janamdin mubarak ho meri pyaari si Gulaboo,<br />
+                        Meri zindagi ki sabse haseen kahani hai sirf tu."
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SECTION 3A-2: 4 INTERACTIVE 3D FLIP LOVE NOTE CARDS
+        ===================================================== -->
+        <section class="max-w-5xl mx-auto px-5 py-10">
+            <div class="text-center mb-9">
+                <span class="text-xs uppercase tracking-[0.26em] text-amber-300/90">Tap Each Card To Flip</span>
+                <h2 class="font-serif-royal text-3xl sm:text-4xl font-bold text-amber-100 mt-2">
+                    Chote Chote Love Notes 💝
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Flip Card 1 -->
+                <div class="flip-card" role="button" tabindex="0" aria-label="Flip Love Note 1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face glass-velvet border border-amber-300/45">
+                            <span class="text-4xl mb-3">🌸</span>
+                            <h3 class="font-serif-royal text-lg font-bold text-amber-200">Tumhari Muskaan</h3>
+                            <p class="text-xs text-rose-200/75 mt-2">Tap to read ✨</p>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <p class="font-hand text-2xl text-amber-200 mb-2">Mera Sukoon ❤️</p>
+                            <p class="text-xs sm:text-sm text-rose-100/95 leading-relaxed">
+                                Tum jab hasti ho na, lagta hai poori duniya mein sab kuch theek ho gaya hai. Hamesha aise hi muskurati rehna!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 2 -->
+                <div class="flip-card" role="button" tabindex="0" aria-label="Flip Love Note 2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face glass-velvet border border-amber-300/45">
+                            <span class="text-4xl mb-3">👑</span>
+                            <h3 class="font-serif-royal text-lg font-bold text-amber-200">Meri Queen</h3>
+                            <p class="text-xs text-rose-200/75 mt-2">Tap to read ✨</p>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <p class="font-hand text-2xl text-amber-200 mb-2">Sabse Khaas ✨</p>
+                            <p class="text-xs sm:text-sm text-rose-100/95 leading-relaxed">
+                                Chahe tum saree mein ho ya simple look mein, mere liye tum duniya ki sabse khoobsurat ladki ho, meri Gulaboo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 3 -->
+                <div class="flip-card" role="button" tabindex="0" aria-label="Flip Love Note 3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face glass-velvet border border-amber-300/45">
+                            <span class="text-4xl mb-3">🤝</span>
+                            <h3 class="font-serif-royal text-lg font-bold text-amber-200">Mera Vaada</h3>
+                            <p class="text-xs text-rose-200/75 mt-2">Tap to read ✨</p>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <p class="font-hand text-2xl text-amber-200 mb-2">Hamesha Saath 💕</p>
+                            <p class="text-xs sm:text-sm text-rose-100/95 leading-relaxed">
+                                Har khushi aur har mushkil mein mera haath hamesha tumhare haath mein rahega—aaj bhi, kal bhi, hamesha!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 4 -->
+                <div class="flip-card" role="button" tabindex="0" aria-label="Flip Love Note 4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face glass-velvet border border-amber-300/45">
+                            <span class="text-4xl mb-3">🎂</span>
+                            <h3 class="font-serif-royal text-lg font-bold text-amber-200">Birthday Dua</h3>
+                            <p class="text-xs text-rose-200/75 mt-2">Tap to read ✨</p>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <p class="font-hand text-2xl text-amber-200 mb-2">Tum Jiyo Hazaron Saal 🌹</p>
+                            <p class="text-xs sm:text-sm text-rose-100/95 leading-relaxed">
+                                Bhagwan tumhe duniya ki saari khushiyan, kaamyabi aur sehat de. Happy Birthday meri dil ki dhadkan!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SECTION 3B: MERE DIL KI BAAT (VINTAGE LOVE LETTER)
+        ===================================================== -->
+        <section class="max-w-3xl mx-auto px-5 py-12">
+            <div class="text-center mb-10">
+                <span class="text-xs uppercase tracking-[0.26em] text-amber-300/90">Sealed With Endless Love</span>
+                <h2 class="font-serif-royal text-3xl sm:text-4xl font-bold text-amber-100 mt-2">
+                    Mere Dil Ki Baat 💌
+                </h2>
+            </div>
+
+            <div class="stationery-paper rounded-3xl p-7 pt-12 sm:p-11 sm:pt-14 relative border-2 border-amber-300/65">
+                <!-- Red Wax Seal Emblem at Top Center -->
+                <div class="wax-seal absolute -top-8 left-1/2 -translate-x-1/2 flex items-center justify-center select-none" aria-hidden="true">
+                    <span class="text-2xl text-amber-100 drop-shadow">❤️</span>
+                </div>
+
+                <div class="flex items-center justify-between border-b border-rose-900/15 pb-4 mb-6">
+                    <span class="font-script text-3xl sm:text-4xl text-rose-900">Meri Pyaari Gulaboo,</span>
+                    <span class="text-xs uppercase tracking-widest text-rose-800/70 font-medium">Forever Yours</span>
+                </div>
+
+                <div class="space-y-4 text-sm sm:text-base leading-relaxed text-rose-950/90">
+                    <p>
+                        Aaj tumhara birthday hai, aur sach kahoon toh mere paas itne shabd hi nahi hain jo yeh bayaan kar sakein ki tum mere liye kitni khaas ho. Jab se tum meri zindagi mein aayi ho, har ek din zyada rangeen, zyada pyaara aur zyada sukoon bhara ho gaya hai.
+                    </p>
+                    <p>
+                        Main shayad har roz bol na paun, par main tumse beintehaa pyaar karta hoon. Tumhari ek muskaan meri saari thakan mita deti hai, aur tumhara saath mujhe har roz ehsaas dilata hai ki main duniya ka sabse khushnaseeb insaan hoon.
+                    </p>
+                    <p>
+                        Aaj ke is khaas din meri bas yahi dua hai ki tumhari zindagi mein kabhi koi gham na aaye. Tum hamesha aise hi chamakti raho, hansti raho, aur apne saare sapne poore karo. Main hamesha tumhara haath thaam kar tumhare saath chalunga.
+                    </p>
+                    <p class="font-semibold text-rose-900">
+                        Happy Birthday, Meri Jaan, Meri Gulaboo! I love you endlessly, aaj bhi, kal bhi, aur hamesha. ❤️🌹
+                    </p>
+                </div>
+
+                <div class="mt-8 pt-5 border-t border-rose-900/15 flex items-center justify-between gap-4">
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-rose-800/70">Hamesha Sirf Tumhara,</p>
+                        <p class="font-script text-3xl sm:text-4xl text-rose-900 mt-1">Tumhara Pyaar ❤️</p>
+                    </div>
+                    <div class="wax-seal flex items-center justify-center shrink-0 select-none" aria-hidden="true">
+                        <span class="font-script text-2xl text-amber-200 drop-shadow">G♥</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SECTION 3C: INTERACTIVE "SEND ENDLESS LOVE" FINALE
+        ===================================================== -->
+        <section class="max-w-2xl mx-auto px-5 pt-8 pb-6 text-center">
+            <div class="glass-velvet rounded-3xl p-8 sm:p-10 border border-amber-300/40">
+                <p class="font-script text-4xl sm:text-5xl text-amber-200 mb-3">
+                    Ek Aakhiri Surprise... 🌹
+                </p>
+                <p class="text-sm sm:text-base text-rose-100/85 mb-7">
+                    Jitni baar is button par tap karogi, utna hi mera pyaar tumhare liye barsega!
+                </p>
+
+                <button id="endless-love-btn" type="button"
+                    class="px-8 py-4 rounded-full bg-gradient-to-r from-rose-600 via-pink-500 to-amber-400 text-white font-semibold text-base sm:text-lg shadow-[0_0_28px_rgba(255,77,121,0.6)] hover:shadow-[0_0_42px_rgba(255,209,102,0.8)] hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer border border-amber-200/60">
+                    Touch For Endless Love 🌹❤️
+                </button>
+
+                <p id="love-counter" class="mt-5 text-xs sm:text-sm text-amber-200/85 min-h-[20px]"></p>
+            </div>
+
+            <footer class="mt-10 text-xs text-rose-200/60">
+                Made with infinite love, sirf meri Gulaboo ke liye ❤️
+            </footer>
+        </section>
+    </main>
+
+    <!-- =========================================================
+         FULL-SCREEN ROMANTIC POLAROID LIGHTBOX VIEWER
+    ========================================================= -->
+    <div id="photo-lightbox" class="hidden fixed inset-0 z-[75] bg-black/90 backdrop-blur-md flex flex-col items-center justify-center p-4 sm:p-8" role="dialog" aria-modal="true" aria-label="Full Screen Photo Viewer">
+        <button id="close-lightbox-btn" type="button" aria-label="Close Lightbox"
+            class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full glass-velvet border border-amber-300/50 text-amber-100 text-xl flex items-center justify-center hover:scale-105 cursor-pointer transition">
+            ✕
+        </button>
+
+        <div class="max-w-full max-h-[80vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Gulaboo Memory"
+                 class="max-w-full max-h-[74vh] w-auto h-auto rounded-xl border-2 border-amber-300/65 shadow-[0_0_50px_rgba(255,209,102,0.28)] object-contain" />
+            <p id="lightbox-caption" class="font-hand text-3xl text-amber-200 mt-4 text-center"></p>
+        </div>
+    </div>
+
+    <!-- Non-Blocking Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-[90] pointer-events-none"></div>
+
+    <!-- Non-Blocking Modal for Large Video (>25MB) Export Guidance -->
+    <div id="export-notice-modal" class="hidden fixed inset-0 z-[95] bg-black/80 backdrop-blur-sm flex items-center justify-center p-5" role="dialog" aria-modal="true" aria-labelledby="export-notice-title">
+        <div class="glass-velvet max-w-md w-full rounded-3xl p-6 sm:p-7 border border-amber-300/60 text-center shadow-2xl">
+            <div class="text-4xl mb-3">🎬✨</div>
+            <h3 id="export-notice-title" class="font-serif-royal text-xl font-bold text-amber-200 mb-2">
+                Website Downloaded!
+            </h3>
+            <p class="text-sm text-rose-100/90 leading-relaxed mb-5">
+                Aapka video <strong>25MB se bada</strong> hai, isliye browser ko smooth rakhne ke liye `index.html` mein video ka naam <strong class="text-amber-200">video.mp4</strong> set kiya gaya hai.<br /><br />
+                Bas apne video file ka naam <strong class="text-amber-200">video.mp4</strong> rakh kar download hui <strong class="text-amber-200">index.html</strong> ke saath ek hi folder mein rakhein aur Netlify par upload kar dein! ❤️
+            </p>
+            <button id="close-export-notice-btn" type="button"
+                class="px-7 py-2.5 rounded-full btn-poster-pill text-sm font-semibold cursor-pointer">
+                Samajh Gaya ❤️
+            </button>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         JAVASCRIPT: ANIMATIONS, PHOTOS, VIDEO, CAKE, AUDIO & EXPORT
+    ========================================================= -->
+    <script>
+        /**
+         * ====================================================================
+         * EMBEDDED EXPORT CONFIGURATION (Auto-populated on Download Final HTML)
+         * ====================================================================
+         */
+        /*__EMBEDDED_PHOTOS_START__*/
+        const EMBEDDED_PHOTOS = [null, null, null, null];
+        /*__EMBEDDED_PHOTOS_END__*/
+
+        /*__EMBEDDED_AUDIO_START__*/
+        const EMBEDDED_AUDIO = null;
+        /*__EMBEDDED_AUDIO_END__*/
+
+        /*__EMBEDDED_VIDEO_START__*/
+        const EMBEDDED_VIDEO = null;
+        /*__EMBEDDED_VIDEO_END__*/
+
+        /*__DEFAULT_PREVIEW_START__*/
+        const DEFAULT_PREVIEW_MODE = false;
+        /*__DEFAULT_PREVIEW_END__*/
+
+        const PHOTO_STORAGE_KEY = 'gulaboo_polaroid_poster_v2';
+        const MAX_EMBED_VIDEO_BYTES = 25 * 1024 * 1024; // 25MB safe base64 embed limit
+        const POLAROID_CAPTIONS = [
+            'Pyaari Gulaboo ✨',
+            'Tum jiyo hazaron saal',
+            'Saree wali',
+            'Birthday Cake'
+        ];
+
+        // Active photo state (array of 4 base64 JPEG data URLs or null)
+        let photos = [null, null, null, null];
+        let isPreviewMode = DEFAULT_PREVIEW_MODE;
+        let activeUploadSlot = 0;
+
+        /**
+         * ====================================================================
+         * 1. NON-BLOCKING TOAST HELPER (Replaces alert/confirm)
+         * ====================================================================
+         */
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            container.innerHTML = '';
+            const toast = document.createElement('div');
+            toast.className = 'toast-banner glass-velvet px-5 py-2.5 rounded-full text-xs sm:text-sm text-amber-100 border border-amber-300/55 shadow-2xl whitespace-nowrap';
+            toast.textContent = message;
+            container.appendChild(toast);
+            setTimeout(() => {
+                if (toast.parentNode) toast.remove();
+            }, 3000);
+        }
+
+        /**
+         * ====================================================================
+         * 2. FULL-SCREEN AMBIENT & CELEBRATION PARTICLE CANVAS
+         *    (Realistic Falling Red Rose Petals, Glowing Hearts, Stardust, Confetti)
+         * ====================================================================
+         */
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let cw = 0;
+        let ch = 0;
+        const petals = [];
+        const hearts = [];
+        const stars = [];
+        const bursts = [];
+
+        function resizeCanvas() {
+            cw = window.innerWidth;
+            ch = window.innerHeight;
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            canvas.width = Math.floor(cw * dpr);
+            canvas.height = Math.floor(ch * dpr);
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        function initParticles() {
+            petals.length = 0;
+            hearts.length = 0;
+            stars.length = 0;
+
+            const petalCount = cw < 640 ? 18 : 30;
+            const heartCount = cw < 640 ? 9 : 15;
+            const starCount = cw < 640 ? 34 : 58;
+
+            for (let i = 0; i < petalCount; i++) {
+                petals.push({
+                    x: Math.random() * cw,
+                    y: Math.random() * ch,
+                    size: 6 + Math.random() * 8,
+                    vy: 0.45 + Math.random() * 0.8,
+                    vx: -0.35 + Math.random() * 0.7,
+                    angle: Math.random() * Math.PI * 2,
+                    spin: -0.022 + Math.random() * 0.044,
+                    opacity: 0.35 + Math.random() * 0.48,
+                    color: Math.random() > 0.45 ? '#d91642' : '#ff476f'
+                });
+            }
+
+            for (let i = 0; i < heartCount; i++) {
+                hearts.push({
+                    x: Math.random() * cw,
+                    y: Math.random() * ch,
+                    size: 7 + Math.random() * 9,
+                    vy: 0.25 + Math.random() * 0.42,
+                    phase: Math.random() * Math.PI * 2,
+                    opacity: 0.16 + Math.random() * 0.28,
+                    color: Math.random() > 0.5 ? '#ffd97d' : '#ff7aa2'
+                });
+            }
+
+            for (let i = 0; i < starCount; i++) {
+                stars.push({
+                    x: Math.random() * cw,
+                    y: Math.random() * ch,
+                    r: 0.7 + Math.random() * 1.7,
+                    phase: Math.random() * Math.PI * 2,
+                    speed: 0.016 + Math.random() * 0.028
+                });
+            }
+        }
+
+        function spawnCelebrationShower(originX, originY, count = 80) {
+            const colors = ['#ffd97d', '#ff476f', '#ffb3c6', '#fff5d6', '#e63956', '#f4c27f'];
+            for (let i = 0; i < count; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = 2.2 + Math.random() * 6.8;
+                const roll = Math.random();
+                bursts.push({
+                    x: originX,
+                    y: originY,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 2.8,
+                    size: 4 + Math.random() * 6,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rot: Math.random() * Math.PI * 2,
+                    vRot: -0.16 + Math.random() * 0.32,
+                    life: 1,
+                    decay: 0.008 + Math.random() * 0.011,
+                    shape: roll < 0.35 ? 'petal' : (roll < 0.65 ? 'heart' : 'confetti')
+                });
+            }
+        }
+
+        function drawHeart(x, y, size, color, alpha) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.globalAlpha = alpha;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(0, size * 0.3);
+            ctx.bezierCurveTo(-size * 0.5, -size * 0.25, -size, size * 0.25, 0, size);
+            ctx.bezierCurveTo(size, size * 0.25, size * 0.5, -size * 0.25, 0, size * 0.3);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function drawRosePetal(x, y, size, angle, color, alpha) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(angle);
+            ctx.globalAlpha = alpha;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(0, -size * 0.6);
+            ctx.bezierCurveTo(size * 0.8, -size * 0.7, size * 0.9, size * 0.5, 0, size * 0.8);
+            ctx.bezierCurveTo(-size * 0.9, size * 0.5, -size * 0.8, -size * 0.7, 0, -size * 0.6);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, cw, ch);
+
+            // Golden Stardust
+            for (const s of stars) {
+                s.phase += s.speed;
+                const alpha = 0.14 + 0.6 * (0.5 + 0.5 * Math.sin(s.phase));
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 224, 130, ${alpha})`;
+                ctx.fill();
+            }
+
+            // Floating Glowing Hearts
+            for (const h of hearts) {
+                h.y -= h.vy;
+                h.phase += 0.018;
+                h.x += Math.sin(h.phase) * 0.35;
+                if (h.y < -25) {
+                    h.y = ch + 20;
+                    h.x = Math.random() * cw;
+                }
+                drawHeart(h.x, h.y, h.size, h.color, h.opacity);
+            }
+
+            // Falling Rose Petals
+            for (const p of petals) {
+                p.y += p.vy;
+                p.x += p.vx + Math.sin(p.angle) * 0.38;
+                p.angle += p.spin;
+                if (p.y > ch + 20) {
+                    p.y = -20;
+                    p.x = Math.random() * cw;
+                }
+                drawRosePetal(p.x, p.y, p.size, p.angle, p.color, p.opacity);
+            }
+
+            // Celebration Bursts
+            for (let i = bursts.length - 1; i >= 0; i--) {
+                const b = bursts[i];
+                b.x += b.vx;
+                b.y += b.vy;
+                b.vy += 0.11;
+                b.vx *= 0.99;
+                b.rot += b.vRot;
+                b.life -= b.decay;
+
+                if (b.life <= 0) {
+                    bursts.splice(i, 1);
+                    continue;
+                }
+
+                if (b.shape === 'heart') {
+                    drawHeart(b.x, b.y, b.size * 1.1, b.color, b.life);
+                } else if (b.shape === 'petal') {
+                    drawRosePetal(b.x, b.y, b.size * 1.1, b.rot, b.color, b.life);
+                } else {
+                    ctx.save();
+                    ctx.translate(b.x, b.y);
+                    ctx.rotate(b.rot);
+                    ctx.globalAlpha = b.life;
+                    ctx.fillStyle = b.color;
+                    ctx.fillRect(-b.size / 2, -b.size / 3, b.size, b.size * 0.65);
+                    ctx.restore();
+                }
+            }
+
+            requestAnimationFrame(animateCanvas);
+        }
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
+        /**
+         * ====================================================================
+         * 3. POLAROID PHOTO UPLOAD, CANVAS COMPRESSION, 90° ROTATION & STORAGE
+         * ====================================================================
+         */
+        function loadSavedPhotos() {
+            // Priority 1: Embedded photos from exported final website
+            if (Array.isArray(EMBEDDED_PHOTOS) && EMBEDDED_PHOTOS.some(Boolean)) {
+                photos = EMBEDDED_PHOTOS.slice(0, 4);
+            }
+            // Priority 2: User's localStorage overrides
+            try {
+                const raw = localStorage.getItem(PHOTO_STORAGE_KEY);
+                if (raw) {
+                    const parsed = JSON.parse(raw);
+                    if (Array.isArray(parsed) && parsed.length === 4) {
+                        for (let i = 0; i < 4; i++) {
+                            if (parsed[i]) photos[i] = parsed[i];
+                        }
+                    }
+                }
+            } catch (err) {
+                console.warn('Could not read saved photos:', err);
+            }
+            renderAllPolaroids();
+        }
+
+        function savePhotosToStorage() {
+            try {
+                localStorage.setItem(PHOTO_STORAGE_KEY, JSON.stringify(photos));
+            } catch (err) {
+                console.warn('localStorage quota reached:', err);
+                showToast('Photo added! (Storage tight — use Download HTML to save permanently)');
+            }
+        }
+
+        function renderAllPolaroids() {
+            for (let i = 0; i < 4; i++) {
+                const imgEl = document.getElementById(`polaroid-img-${i}`);
+                const phEl = document.getElementById(`polaroid-ph-${i}`);
+                const toolsEl = document.getElementById(`polaroid-tools-${i}`);
+
+                if (photos[i]) {
+                    imgEl.src = photos[i];
+                    imgEl.classList.remove('hidden');
+                    phEl.classList.add('hidden');
+                    toolsEl.classList.remove('hidden');
+                } else {
+                    imgEl.removeAttribute('src');
+                    imgEl.classList.add('hidden');
+                    phEl.classList.remove('hidden');
+                    toolsEl.classList.add('hidden');
+                }
+            }
+        }
+
+        // Compress uploaded file via offscreen canvas (max 900px, JPEG 0.84) for crisp quality & fast localStorage
+        function processImageFile(file, callback) {
+            if (!file || !file.type.startsWith('image/')) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const maxDim = 900;
+                    let w = img.width;
+                    let h = img.height;
+                    if (w > maxDim || h > maxDim) {
+                        const scale = maxDim / Math.max(w, h);
+                        w = Math.round(w * scale);
+                        h = Math.round(h * scale);
+                    }
+                    const off = document.createElement('canvas');
+                    off.width = w;
+                    off.height = h;
+                    const octx = off.getContext('2d');
+                    octx.drawImage(img, 0, 0, w, h);
+                    callback(off.toDataURL('image/jpeg', 0.84));
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // True 90-degree clockwise canvas rotation so sideways photos straighten permanently with perfect object-fit: cover
+        function rotatePhoto90(slotIndex) {
+            const currentSrc = photos[slotIndex];
+            if (!currentSrc) return;
+            const img = new Image();
+            img.onload = () => {
+                const off = document.createElement('canvas');
+                off.width = img.height;
+                off.height = img.width;
+                const octx = off.getContext('2d');
+                octx.translate(off.width / 2, off.height / 2);
+                octx.rotate(Math.PI / 2);
+                octx.drawImage(img, -img.width / 2, -img.height / 2);
+                photos[slotIndex] = off.toDataURL('image/jpeg', 0.86);
+                renderAllPolaroids();
+                savePhotosToStorage();
+            };
+            img.src = currentSrc;
+        }
+
+        // Lightbox Controls
+        const photoLightbox = document.getElementById('photo-lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeLightboxBtn = document.getElementById('close-lightbox-btn');
+
+        function openLightbox(slotIndex) {
+            if (!photos[slotIndex]) return;
+            lightboxImg.src = photos[slotIndex];
+            lightboxCaption.textContent = POLAROID_CAPTIONS[slotIndex] || 'Meri Gulaboo ❤️';
+            photoLightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            photoLightbox.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        closeLightboxBtn.addEventListener('click', closeLightbox);
+        photoLightbox.addEventListener('click', (e) => {
+            if (e.target === photoLightbox) closeLightbox();
+        });
+
+        // Wire Polaroid Clicks, Rotate & Replace Buttons
+        const singlePhotoInput = document.getElementById('single-photo-input');
+        const bulkPhotoInput = document.getElementById('bulk-photo-input');
+
+        document.querySelectorAll('.polaroid-card').forEach((card) => {
+            const slot = parseInt(card.getAttribute('data-slot'), 10);
+            const handleActivate = () => {
+                if (isPreviewMode) {
+                    if (photos[slot]) openLightbox(slot);
+                } else {
+                    if (!photos[slot]) {
+                        activeUploadSlot = slot;
+                        singlePhotoInput.click();
+                    } else {
+                        openLightbox(slot);
+                    }
+                }
+            };
+            card.addEventListener('click', handleActivate);
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleActivate();
+                }
+            });
+        });
+
+        document.querySelectorAll('.rotate-btn').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const slot = parseInt(btn.getAttribute('data-slot'), 10);
+                rotatePhoto90(slot);
+            });
+        });
+
+        document.querySelectorAll('.replace-btn').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                activeUploadSlot = parseInt(btn.getAttribute('data-slot'), 10);
+                singlePhotoInput.click();
+            });
+        });
+
+        singlePhotoInput.addEventListener('change', (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (file) {
+                processImageFile(file, (dataUrl) => {
+                    photos[activeUploadSlot] = dataUrl;
+                    renderAllPolaroids();
+                    savePhotosToStorage();
+                    showToast(`Photo ${activeUploadSlot + 1} added! ✨`);
+                });
+            }
+            singlePhotoInput.value = '';
+        });
+
+        bulkPhotoInput.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files || []).slice(0, 4);
+            if (!files.length) return;
+            let loaded = 0;
+            files.forEach((file, idx) => {
+                processImageFile(file, (dataUrl) => {
+                    photos[idx] = dataUrl;
+                    loaded++;
+                    if (loaded === files.length) {
+                        renderAllPolaroids();
+                        savePhotosToStorage();
+                        showToast(`${loaded} photo${loaded > 1 ? 's' : ''} added to collage! 🌹`);
+                        closeDrawer();
+                    }
+                });
+            });
+            bulkPhotoInput.value = '';
+        });
+
+        /**
+         * ====================================================================
+         * 4. INTERACTIVE 7-LETTER "G U L A B O O" CAKE LOGIC
+         * ====================================================================
+         */
+        const candlesBtn = document.getElementById('candles-btn');
+        const blessingCard = document.getElementById('blessing-card');
+        const cakeAura = document.getElementById('cake-aura');
+        const allFlames = Array.from(document.querySelectorAll('.candle-flame'));
+        const allSmokes = Array.from(document.querySelectorAll('.candle-smoke'));
+        let candlesLit = true;
+
+        candlesBtn.addEventListener('click', () => {
+            const rect = candlesBtn.getBoundingClientRect();
+            const burstX = rect.left + rect.width / 2;
+            const burstY = Math.max(120, rect.top - 120);
+
+            if (candlesLit) {
+                // Extinguish all 7 flames smoothly with rising smoke wisps
+                candlesLit = false;
+                cakeAura.style.opacity = '0.15';
+                allFlames.forEach((flame, idx) => {
+                    setTimeout(() => {
+                        flame.classList.add('extinguished');
+                        const smoke = allSmokes[idx];
+                        if (smoke) {
+                            smoke.classList.remove('puff');
+                            void smoke.offsetWidth;
+                            smoke.classList.add('puff');
+                        }
+                    }, idx * 70);
+                });
+
+                blessingCard.classList.remove('hidden');
+                candlesBtn.textContent = 'Candles Phir Se Jalao 🕯️';
+                spawnCelebrationShower(burstX, burstY, 105);
+
+                // Auto-start romantic melody if not already playing
+                if (!isMusicPlaying) {
+                    toggleMusic();
+                }
+            } else {
+                // Re-light all 7 flames one by one
+                candlesLit = true;
+                cakeAura.style.opacity = '1';
+                blessingCard.classList.add('hidden');
+                allFlames.forEach((flame, idx) => {
+                    setTimeout(() => {
+                        flame.classList.remove('extinguished');
+                    }, idx * 90);
+                });
+                candlesBtn.textContent = 'Candles Bujhao & Wish Maango 🌬️✨';
+                spawnCelebrationShower(burstX, burstY, 45);
+            }
+        });
+
+        /**
+         * ====================================================================
+         * 5. POLYPHONIC WEB AUDIO BIRTHDAY MELODY + CUSTOM MP3 (INDEXEDDB)
+         * ====================================================================
+         */
+        let audioCtx = null;
+        let masterGain = null;
+        let isMusicPlaying = false;
+        let melodyTimer = null;
+        let noteIdx = 0;
+
+        let customAudioEl = null;
+        let customAudioBlob = null;
+        let customAudioName = '';
+        let customVideoBlob = null;
+        let customVideoObjectUrl = null;
+        let customVideoName = '';
+        const DB_NAME = 'GulabooBirthdayAudioDB';
+        const DB_STORE = 'tracks';
+
+        const NOTE = {
+            C3: 130.81, D3: 146.83, E3: 164.81, F3: 174.61, G3: 196.00, A3: 220.00, Bb3: 233.08,
+            C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.00, A4: 440.00, Bb4: 466.16,
+            C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99, A5: 880.00
+        };
+
+        const BIRTHDAY_MELODY = [
+            { m: NOTE.C5, c: [NOTE.F3, NOTE.A3, NOTE.C4], b: 0.75 },
+            { m: NOTE.C5, c: null, b: 0.25 },
+            { m: NOTE.D5, c: [NOTE.F3, NOTE.C4, NOTE.F4], b: 1.0 },
+            { m: NOTE.C5, c: null, b: 1.0 },
+            { m: NOTE.F5, c: [NOTE.C3, NOTE.G3, NOTE.Bb3], b: 1.0 },
+            { m: NOTE.E5, c: [NOTE.C3, NOTE.G3, NOTE.C4, NOTE.E4], b: 2.0 },
+
+            { m: NOTE.C5, c: [NOTE.C3, NOTE.G3, NOTE.C4], b: 0.75 },
+            { m: NOTE.C5, c: null, b: 0.25 },
+            { m: NOTE.D5, c: [NOTE.C3, NOTE.G3, NOTE.E4], b: 1.0 },
+            { m: NOTE.C5, c: null, b: 1.0 },
+            { m: NOTE.G5, c: [NOTE.F3, NOTE.A3, NOTE.C4], b: 1.0 },
+            { m: NOTE.F5, c: [NOTE.F3, NOTE.A3, NOTE.C4, NOTE.F4], b: 2.0 },
+
+            { m: NOTE.C5, c: [NOTE.F3, NOTE.A3, NOTE.C4], b: 0.75 },
+            { m: NOTE.C5, c: null, b: 0.25 },
+            { m: NOTE.A5, c: [NOTE.D3, NOTE.A3, NOTE.F4], b: 1.0 },
+            { m: NOTE.F5, c: null, b: 1.0 },
+            { m: NOTE.E5, c: [NOTE.Bb3, NOTE.D4, NOTE.F4], b: 1.0 },
+            { m: NOTE.D5, c: [NOTE.G3, NOTE.D4], b: 1.0 },
+            { m: NOTE.D5, c: null, b: 1.0 },
+
+            { m: NOTE.Bb4, c: [NOTE.Bb3, NOTE.D4, NOTE.F4], b: 0.75 },
+            { m: NOTE.Bb4, c: null, b: 0.25 },
+            { m: NOTE.A4, c: [NOTE.F3, NOTE.C4, NOTE.F4], b: 1.0 },
+            { m: NOTE.F5, c: [NOTE.C3, NOTE.G3, NOTE.C4], b: 1.0 },
+            { m: NOTE.G5, c: [NOTE.C3, NOTE.G3, NOTE.E4], b: 1.0 },
+            { m: NOTE.F5, c: [NOTE.F3, NOTE.A3, NOTE.C4, NOTE.F4], b: 2.4 }
+        ];
+
+        function ensureAudioContext() {
+            try {
+                const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!audioCtx && AudioCtx) {
+                    audioCtx = new AudioCtx();
+                    masterGain = audioCtx.createGain();
+                    masterGain.gain.value = 0.42;
+                    masterGain.connect(audioCtx.destination);
+                }
+                if (audioCtx && audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+            } catch (err) {
+                console.warn('Web Audio note:', err);
+            }
+        }
+
+        function playMusicBoxNote(freq, start, dur) {
+            if (!audioCtx || !masterGain) return;
+            const osc = audioCtx.createOscillator();
+            const over = audioCtx.createOscillator();
+            const g = audioCtx.createGain();
+            const og = audioCtx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, start);
+            over.type = 'triangle';
+            over.frequency.setValueAtTime(freq * 2, start);
+            og.gain.setValueAtTime(0.14, start);
+
+            const tail = Math.max(0.65, dur * 1.55);
+            g.gain.setValueAtTime(0.0001, start);
+            g.gain.linearRampToValueAtTime(0.35, start + 0.025);
+            g.gain.exponentialRampToValueAtTime(0.001, start + tail);
+
+            osc.connect(g);
+            over.connect(og);
+            og.connect(g);
+            g.connect(masterGain);
+
+            osc.start(start);
+            over.start(start);
+            osc.stop(start + tail + 0.05);
+            over.stop(start + tail + 0.05);
+        }
+
+        function playWarmChord(freqs, start, dur) {
+            if (!audioCtx || !masterGain) return;
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(900, start);
+            filter.connect(masterGain);
+
+            const tail = Math.max(1.2, dur * 1.85);
+            freqs.forEach((f) => {
+                const osc = audioCtx.createOscillator();
+                const g = audioCtx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(f, start);
+                g.gain.setValueAtTime(0.0001, start);
+                g.gain.linearRampToValueAtTime(0.11, start + 0.08);
+                g.gain.exponentialRampToValueAtTime(0.001, start + tail);
+                osc.connect(g);
+                g.connect(filter);
+                osc.start(start);
+                osc.stop(start + tail + 0.05);
+            });
+        }
+
+        function tickMelody() {
+            if (!isMusicPlaying || customAudioEl) return;
+            ensureAudioContext();
+            if (!audioCtx) return;
+
+            const step = BIRTHDAY_MELODY[noteIdx];
+            const durSec = step.b * 0.56;
+            const now = audioCtx.currentTime + 0.02;
+
+            if (step.m) playMusicBoxNote(step.m, now, durSec);
+            if (step.c) playWarmChord(step.c, now, durSec);
+
+            noteIdx = (noteIdx + 1) % BIRTHDAY_MELODY.length;
+            melodyTimer = setTimeout(tickMelody, durSec * 1000);
+        }
+
+        const musicBtn = document.getElementById('music-btn');
+        const mp3StatusText = document.getElementById('mp3-status-text');
+
+        function updateMusicUI() {
+            musicBtn.textContent = isMusicPlaying ? 'Music Off 🔇' : 'Music On 🎵';
+        }
+
+        function stopMusic() {
+            isMusicPlaying = false;
+            if (melodyTimer) {
+                clearTimeout(melodyTimer);
+                melodyTimer = null;
+            }
+            if (customAudioEl) {
+                customAudioEl.pause();
+            }
+            updateMusicUI();
+        }
+
+        function startMusic() {
+            isMusicPlaying = true;
+            updateMusicUI();
+            if (customAudioEl) {
+                customAudioEl.play().catch(() => {
+                    // Fallback to built-in melody if custom audio fails
+                    customAudioEl = null;
+                    ensureAudioContext();
+                    tickMelody();
+                });
+            } else {
+                ensureAudioContext();
+                tickMelody();
+            }
+        }
+
+        function toggleMusic() {
+            if (isMusicPlaying) {
+                stopMusic();
+            } else {
+                startMusic();
+            }
+        }
+
+        musicBtn.addEventListener('click', toggleMusic);
+
+        // IndexedDB Helpers for Optional Custom MP3 Persistence
+        function openAudioDB() {
+            return new Promise((resolve, reject) => {
+                if (!window.indexedDB) return reject(new Error('No IndexedDB'));
+                const req = indexedDB.open(DB_NAME, 1);
+                req.onupgradeneeded = () => {
+                    if (!req.result.objectStoreNames.contains(DB_STORE)) {
+                        req.result.createObjectStore(DB_STORE);
+                    }
+                };
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        function setCustomAudioBlob(blob, name) {
+            const url = URL.createObjectURL(blob);
+            if (customAudioEl) {
+                customAudioEl.pause();
+            }
+            customAudioBlob = blob;
+            customAudioEl = new Audio(url);
+            customAudioEl.loop = true;
+            customAudioName = name || 'Custom Song';
+            mp3StatusText.textContent = `Active Song: 🎵 ${customAudioName}`;
+        }
+
+        async function loadSavedCustomAudio() {
+            // Priority 1: Embedded MP3 from exported final HTML
+            if (EMBEDDED_AUDIO && typeof EMBEDDED_AUDIO === 'string') {
+                if (customAudioEl) customAudioEl.pause();
+                customAudioEl = new Audio(EMBEDDED_AUDIO);
+                customAudioEl.loop = true;
+                mp3StatusText.textContent = 'Active Song: 🎵 Custom Birthday Song';
+                return;
+            }
+            try {
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readonly');
+                const req = tx.objectStore(DB_STORE).get('customTrack');
+                req.onsuccess = () => {
+                    if (req.result && req.result.blob) {
+                        setCustomAudioBlob(req.result.blob, req.result.name);
+                    }
+                };
+            } catch (err) {
+                console.warn('Custom audio load skipped:', err);
+            }
+        }
+
+        async function saveCustomAudio(file) {
+            setCustomAudioBlob(file, file.name);
+            try {
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                tx.objectStore(DB_STORE).put({ blob: file, name: file.name }, 'customTrack');
+            } catch (err) {
+                console.warn('Custom audio stored in memory only:', err);
+            }
+            if (isMusicPlaying) {
+                stopMusic();
+                startMusic();
+            }
+            showToast(`Custom song loaded: ${file.name} 🎵`);
+        }
+
+        /**
+         * ====================================================================
+         * 5B. SPECIAL VIDEO UPLOAD, INDEXEDDB PERSISTENCE & SMART AUDIO SYNC
+         * ====================================================================
+         */
+        const videoSection = document.getElementById('video-section');
+        const videoUploadPlaceholder = document.getElementById('video-upload-placeholder');
+        const videoPlayerContainer = document.getElementById('video-player-container');
+        const specialVideoPlayer = document.getElementById('special-video-player');
+        const videoFileInput = document.getElementById('video-file-input');
+        const drawerUploadVideoBtn = document.getElementById('drawer-upload-video-btn');
+        const changeVideoBtn = document.getElementById('change-video-btn');
+        const removeVideoBtn = document.getElementById('remove-video-btn');
+        const videoStatusText = document.getElementById('video-status-text');
+
+        function renderVideoState(srcUrl, name) {
+            if (srcUrl) {
+                specialVideoPlayer.src = srcUrl;
+                videoUploadPlaceholder.classList.add('hidden');
+                videoPlayerContainer.classList.remove('hidden');
+                videoSection.classList.remove('no-video');
+                videoStatusText.textContent = `Active Video: 🎬 ${name || 'Special Birthday Video'}`;
+            } else {
+                specialVideoPlayer.pause();
+                specialVideoPlayer.removeAttribute('src');
+                specialVideoPlayer.load();
+                videoPlayerContainer.classList.add('hidden');
+                videoUploadPlaceholder.classList.remove('hidden');
+                videoSection.classList.add('no-video');
+                videoStatusText.textContent = 'No special video uploaded yet (MP4, WebM, MOV)';
+            }
+        }
+
+        function setCustomVideoBlob(blob, name) {
+            if (customVideoObjectUrl) {
+                URL.revokeObjectURL(customVideoObjectUrl);
+            }
+            customVideoBlob = blob;
+            customVideoName = name || 'Special Video';
+            customVideoObjectUrl = URL.createObjectURL(blob);
+            renderVideoState(customVideoObjectUrl, customVideoName);
+        }
+
+        async function loadSavedCustomVideo() {
+            // Priority 1: Embedded video or external video.mp4 reference from exported HTML
+            if (EMBEDDED_VIDEO && typeof EMBEDDED_VIDEO === 'string') {
+                renderVideoState(EMBEDDED_VIDEO, 'Special Birthday Video');
+                return;
+            }
+            // Priority 2: IndexedDB saved Blob
+            try {
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readonly');
+                const req = tx.objectStore(DB_STORE).get('customVideo');
+                req.onsuccess = () => {
+                    if (req.result && req.result.blob) {
+                        setCustomVideoBlob(req.result.blob, req.result.name);
+                    }
+                };
+            } catch (err) {
+                console.warn('Custom video load skipped:', err);
+            }
+        }
+
+        async function saveCustomVideo(file) {
+            if (!file || !file.type.startsWith('video/')) {
+                showToast('Please select a valid MP4, WebM, or MOV video file.');
+                return;
+            }
+            setCustomVideoBlob(file, file.name);
+            try {
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                tx.objectStore(DB_STORE).put({ blob: file, name: file.name }, 'customVideo');
+            } catch (err) {
+                console.warn('Video kept in active session memory:', err);
+            }
+            closeDrawer();
+            videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showToast(`Special video added: ${file.name} 🎬❤️`);
+        }
+
+        async function removeCustomVideo() {
+            if (customVideoObjectUrl) {
+                URL.revokeObjectURL(customVideoObjectUrl);
+                customVideoObjectUrl = null;
+            }
+            customVideoBlob = null;
+            customVideoName = '';
+            renderVideoState(null, '');
+            try {
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                tx.objectStore(DB_STORE).delete('customVideo');
+            } catch (err) {
+                console.warn('Video remove note:', err);
+            }
+            showToast('Video removed 🗑️');
+        }
+
+        // Smart Audio Sync: Playing video automatically pauses background birthday music/MP3
+        specialVideoPlayer.addEventListener('play', () => {
+            if (isMusicPlaying) {
+                stopMusic();
+                showToast('Background music paused for video 🎬');
+            }
+        });
+
+        videoUploadPlaceholder.addEventListener('click', () => videoFileInput.click());
+        videoUploadPlaceholder.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                videoFileInput.click();
+            }
+        });
+        drawerUploadVideoBtn.addEventListener('click', () => videoFileInput.click());
+        changeVideoBtn.addEventListener('click', () => videoFileInput.click());
+        removeVideoBtn.addEventListener('click', removeCustomVideo);
+
+        videoFileInput.addEventListener('change', (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (file) saveCustomVideo(file);
+            videoFileInput.value = '';
+        });
+
+        /**
+         * ====================================================================
+         * 5C. DREAMY ENTRANCE OVERLAY & 3D FLIP LOVE NOTE CARDS
+         * ====================================================================
+         */
+        const entranceOverlay = document.getElementById('entrance-overlay');
+        const openHeartBtn = document.getElementById('open-heart-btn');
+
+        openHeartBtn.addEventListener('click', () => {
+            entranceOverlay.classList.add('fade-out');
+            spawnCelebrationShower(window.innerWidth / 2, window.innerHeight / 2, 75);
+            ensureAudioContext();
+        });
+
+        document.querySelectorAll('.flip-card').forEach((card) => {
+            const toggleFlip = () => card.classList.toggle('flipped');
+            card.addEventListener('click', toggleFlip);
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFlip();
+                }
+            });
+        });
+
+        /**
+         * ====================================================================
+         * 6. INTERACTIVE "SEND ENDLESS LOVE" FINALE BUTTON
+         * ====================================================================
+         */
+        const endlessLoveBtn = document.getElementById('endless-love-btn');
+        const loveCounter = document.getElementById('love-counter');
+        const LOVE_PHRASES = [
+            'I Love You Gulaboo ❤️',
+            'Meri Jaan 🌹',
+            'Happy Birthday Princess 👑',
+            'Tum Mera Sukoon Ho ✨',
+            'Hamesha Sirf Tumhari 💕',
+            'Endless Hugs & Kisses 💌',
+            'Dil Ki Dhadkan 💖',
+            'Tum Jiyo Hazaron Saal 🎂'
+        ];
+        let loveTapCount = 0;
+
+        endlessLoveBtn.addEventListener('click', (e) => {
+            loveTapCount++;
+            const rect = endlessLoveBtn.getBoundingClientRect();
+            const originX = e.clientX || (rect.left + rect.width / 2);
+            const originY = e.clientY || rect.top;
+
+            spawnCelebrationShower(originX, originY, 45);
+
+            const phraseEl = document.createElement('div');
+            phraseEl.className = 'floating-love-phrase font-script text-2xl sm:text-3xl text-amber-200 drop-shadow-[0_3px_12px_rgba(0,0,0,0.85)]';
+            phraseEl.textContent = LOVE_PHRASES[(loveTapCount - 1) % LOVE_PHRASES.length];
+            phraseEl.style.left = `${Math.min(window.innerWidth - 90, Math.max(90, originX))}px`;
+            phraseEl.style.top = `${Math.max(80, originY - 24)}px`;
+            document.body.appendChild(phraseEl);
+            setTimeout(() => phraseEl.remove(), 2650);
+
+            loveCounter.textContent = `❤️ ${loveTapCount}x Endless Love Sent to Gulaboo!`;
+        });
+
+        /**
+         * ====================================================================
+         * 7. SETUP & SHARE DRAWER + SELF-CONTAINED HTML EXPORT
+         * ====================================================================
+         */
+        const setupMenuBtn = document.getElementById('setup-menu-btn');
+        const drawerBackdrop = document.getElementById('setup-drawer-backdrop');
+        const closeDrawerBtn = document.getElementById('close-drawer-btn');
+        const bulkUploadBtn = document.getElementById('bulk-upload-btn');
+        const uploadMp3Btn = document.getElementById('upload-mp3-btn');
+        const customAudioInput = document.getElementById('custom-audio-input');
+        const togglePreviewBtn = document.getElementById('toggle-preview-btn');
+        const previewToggleIcon = document.getElementById('preview-toggle-icon');
+        const previewToggleLabel = document.getElementById('preview-toggle-label');
+        const downloadHtmlBtn = document.getElementById('download-html-btn');
+        const downloadBtnLabel = document.getElementById('download-btn-label');
+        const clearPhotosBtn = document.getElementById('clear-photos-btn');
+        const exportNoticeModal = document.getElementById('export-notice-modal');
+        const closeExportNoticeBtn = document.getElementById('close-export-notice-btn');
+
+        function openDrawer() {
+            drawerBackdrop.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            drawerBackdrop.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function applyPreviewMode(enabled) {
+            isPreviewMode = Boolean(enabled);
+            document.body.classList.toggle('preview-mode', isPreviewMode);
+            if (previewToggleIcon && previewToggleLabel) {
+                previewToggleIcon.textContent = isPreviewMode ? '✏️' : '✅';
+                previewToggleLabel.textContent = isPreviewMode ? 'Edit Mode (Show Icons)' : 'Done (Hide Edit Icons)';
+            }
+        }
+
+        setupMenuBtn.addEventListener('click', openDrawer);
+        closeDrawerBtn.addEventListener('click', closeDrawer);
+        drawerBackdrop.addEventListener('click', (e) => {
+            if (e.target === drawerBackdrop) closeDrawer();
+        });
+
+        closeExportNoticeBtn.addEventListener('click', () => {
+            exportNoticeModal.classList.add('hidden');
+        });
+        exportNoticeModal.addEventListener('click', (e) => {
+            if (e.target === exportNoticeModal) exportNoticeModal.classList.add('hidden');
+        });
+
+        bulkUploadBtn.addEventListener('click', () => bulkPhotoInput.click());
+        uploadMp3Btn.addEventListener('click', () => customAudioInput.click());
+
+        customAudioInput.addEventListener('change', (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (file) saveCustomAudio(file);
+            customAudioInput.value = '';
+        });
+
+        togglePreviewBtn.addEventListener('click', () => {
+            applyPreviewMode(!isPreviewMode);
+            showToast(isPreviewMode ? 'Clean Preview Mode ON ✨' : 'Edit Mode ON — Tap any photo to edit 📸');
+            closeDrawer();
+        });
+
+        clearPhotosBtn.addEventListener('click', async () => {
+            photos = [null, null, null, null];
+            try {
+                localStorage.removeItem(PHOTO_STORAGE_KEY);
+                const db = await openAudioDB();
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                tx.objectStore(DB_STORE).delete('customTrack');
+                tx.objectStore(DB_STORE).delete('customVideo');
+            } catch (err) {
+                console.warn('Reset note:', err);
+            }
+            if (customAudioEl) {
+                customAudioEl.pause();
+                customAudioEl = null;
+                customAudioBlob = null;
+            }
+            if (customVideoObjectUrl) {
+                URL.revokeObjectURL(customVideoObjectUrl);
+                customVideoObjectUrl = null;
+            }
+            customVideoBlob = null;
+            renderVideoState(null, '');
+            mp3StatusText.textContent = 'Default: Built-in Romantic Piano Birthday Melody';
+            renderAllPolaroids();
+            applyPreviewMode(false);
+            showToast('Photos, video & song reset! 🔄');
+        });
+
+        // Helper: Convert Blob/File to Base64 Data URL
+        function blobToDataURL(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = () => reject(reader.error);
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        // Export Self-Contained index.html with Embedded Photos, Custom MP3 & Video (<=25MB or video.mp4 fallback)
+        downloadHtmlBtn.addEventListener('click', async () => {
+            const originalLabel = downloadBtnLabel.textContent;
+            let usedExternalVideoFallback = false;
+
+            try {
+                downloadHtmlBtn.disabled = true;
+                downloadBtnLabel.textContent = '⏳ Preparing download...';
+
+                // Prepare optional custom audio Data URL
+                let embeddedAudioValue = EMBEDDED_AUDIO;
+                if (customAudioBlob) {
+                    embeddedAudioValue = await blobToDataURL(customAudioBlob);
+                }
+
+                // Prepare optional special video (embed base64 if <= 25MB, else reference video.mp4)
+                let embeddedVideoValue = EMBEDDED_VIDEO;
+                if (customVideoBlob) {
+                    if (customVideoBlob.size <= MAX_EMBED_VIDEO_BYTES) {
+                        embeddedVideoValue = await blobToDataURL(customVideoBlob);
+                    } else {
+                        embeddedVideoValue = 'video.mp4';
+                        usedExternalVideoFallback = true;
+                    }
+                }
+
+                // Close overlays before cloning DOM
+                closeDrawer();
+                closeLightbox();
+
+                const clone = document.documentElement.cloneNode(true);
+
+                // Clean transient UI elements in clone
+                clone.querySelectorAll('.floating-love-phrase').forEach((el) => el.remove());
+                const toastBox = clone.querySelector('#toast-container');
+                if (toastBox) toastBox.innerHTML = '';
+
+                // Ensure Entrance Overlay appears freshly on load in exported file
+                const cloneEntrance = clone.querySelector('#entrance-overlay');
+                if (cloneEntrance) cloneEntrance.classList.remove('fade-out');
+
+                // Ensure clean final look by default in exported file
+                const cloneBody = clone.querySelector('body');
+                if (cloneBody) cloneBody.classList.add('preview-mode');
+
+                // Hide the setup button in the final shared website for a spotless gift look
+                const cloneMenuBtn = clone.querySelector('#setup-menu-btn');
+                if (cloneMenuBtn) cloneMenuBtn.classList.add('hidden');
+
+                // Reset dynamic video src (will be hydrated cleanly from EMBEDDED_VIDEO on load)
+                const cloneVideo = clone.querySelector('#special-video-player');
+                if (cloneVideo) cloneVideo.removeAttribute('src');
+
+                // Reset dynamic blessing card & candles to lit initial state
+                const cloneBlessing = clone.querySelector('#blessing-card');
+                if (cloneBlessing) cloneBlessing.classList.add('hidden');
+                clone.querySelectorAll('.candle-flame').forEach((f) => f.classList.remove('extinguished'));
+                const cloneCandlesBtn = clone.querySelector('#candles-btn');
+                if (cloneCandlesBtn) cloneCandlesBtn.textContent = 'Candles Bujhao & Wish Maango 🌬️✨';
+                const cloneMusicBtn = clone.querySelector('#music-btn');
+                if (cloneMusicBtn) cloneMusicBtn.textContent = 'Music On 🎵';
+
+                // Inject embedded photos, audio, video & DEFAULT_PREVIEW_MODE = true
+                let htmlString = '<!DOCTYPE html>\n' + clone.outerHTML;
+                const safePhotosJson = JSON.stringify(photos).replace(/<\/script/gi, '<\\/script');
+                const safeAudioJson = JSON.stringify(embeddedAudioValue).replace(/<\/script/gi, '<\\/script');
+                const safeVideoJson = JSON.stringify(embeddedVideoValue).replace(/<\/script/gi, '<\\/script');
+
+                htmlString = htmlString.replace(
+                    /\/\*__EMBEDDED_PHOTOS_START__\*\/[\s\S]*?\/\*__EMBEDDED_PHOTOS_END__\*\//,
+                    `/*__EMBEDDED_PHOTOS_START__*/\n        const EMBEDDED_PHOTOS = ${safePhotosJson};\n        /*__EMBEDDED_PHOTOS_END__*/`
+                );
+
+                htmlString = htmlString.replace(
+                    /\/\*__EMBEDDED_AUDIO_START__\*\/[\s\S]*?\/\*__EMBEDDED_AUDIO_END__\*\//,
+                    `/*__EMBEDDED_AUDIO_START__*/\n        const EMBEDDED_AUDIO = ${safeAudioJson};\n        /*__EMBEDDED_AUDIO_END__*/`
+                );
+
+                htmlString = htmlString.replace(
+                    /\/\*__EMBEDDED_VIDEO_START__\*\/[\s\S]*?\/\*__EMBEDDED_VIDEO_END__\*\//,
+                    `/*__EMBEDDED_VIDEO_START__*/\n        const EMBEDDED_VIDEO = ${safeVideoJson};\n        /*__EMBEDDED_VIDEO_END__*/`
+                );
+
+                htmlString = htmlString.replace(
+                    /\/\*__DEFAULT_PREVIEW_START__\*\/[\s\S]*?\/\*__DEFAULT_PREVIEW_END__\*\//,
+                    `/*__DEFAULT_PREVIEW_START__*/\n        const DEFAULT_PREVIEW_MODE = true;\n        /*__DEFAULT_PREVIEW_END__*/`
+                );
+
+                const blob = new Blob([htmlString], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'index.html';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                setTimeout(() => URL.revokeObjectURL(url), 2500);
+
+                if (usedExternalVideoFallback) {
+                    exportNoticeModal.classList.remove('hidden');
+                } else {
+                    showToast('Final index.html downloaded! Ready to share ❤️');
+                }
+            } catch (err) {
+                console.error('Export failed:', err);
+                showToast('Could not export file. Please try again.');
+            } finally {
+                downloadHtmlBtn.disabled = false;
+                downloadBtnLabel.textContent = originalLabel;
+            }
+        });
+
+        // Escape key closes lightbox, drawer or notice modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeDrawer();
+                exportNoticeModal.classList.add('hidden');
+            }
+        });
+
+        // Initialize Everything on Window Load
+        window.onload = function () {
+            resizeCanvas();
+            initParticles();
+            animateCanvas();
+            applyPreviewMode(DEFAULT_PREVIEW_MODE);
+            loadSavedPhotos();
+            loadSavedCustomAudio();
+            loadSavedCustomVideo();
+        };
+    </script>
+</body>
+</html>
